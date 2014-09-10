@@ -1,0 +1,17 @@
+<noinclude>
+{{warning
+|heading=DO NOT EDIT!
+|warning=THIS PAGE IS NOT A REGULAR WIKI PAGE.  IT IS A WIKI *TEMPLATE* AUTO-INCLUDED INTO POTENTIALLY HUNDREDS OF OTHER PAGES.  ANY CHANGE MADE HERE WILL AFFECT ALL THESE PAGES SIMULTANEOUSLY, INCLUDING PAGES DEALING WITH MANY TYPES OF DEVICES.  SO DO NOT EDIT THIS PAGE UNLESS YOU KNOW '''EXACTLY''' WHAT YOU ARE DOING.  THANKS!}}
+</noinclude>
+==Installing and running the image==
+<!--{{Commentlink
+|section=install-the-build-for-{{{device_name}}}
+}}-->
+
+
+Assuming the build completed without error (it will be obvious when it finishes).
+
+Once you have built the image, you'll likely want to install it and run it on your {{{device_name}}}. See [http://fix.me/wiki/Install_SFOS_for_{{{device_codename}}} Testing SailfishOS for {{{device_name}}}] for further details on that process.
+=== Success!  And next steps? ===
+
+''You've done it!''  Welcome to the club of people who can build their operating system from the source code! Hopefully you enjoyed the experience and are inspired to do more!

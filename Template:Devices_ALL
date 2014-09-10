@@ -1,0 +1,6 @@
+<!--THIS TEMPLATE IS A WORK IN PROGRESS.  PLEASE LEAVE IT ALONE FOR NOW.  --><!--
+<!--SEE EXAMPLE HERE!<!--
+<!--{{vendor|function={{{function}}}|name=Vendor}}--><!--
+<!--{{Device_Codename|function={{{function}}}}}<!--
+{{vendor|function={{{function}}}|name=oppo}}-->
+{{Device_find5|function={{{function}}}}}

@@ -1,0 +1,29 @@
+<noinclude>
+{{warning
+|heading=DO NOT EDIT!
+|warning=THIS PAGE IS NOT A REGULAR WIKI PAGE. IT IS A WIKI *TEMPLATE* AUTO-INCLUDED INTO POTENTIALLY HUNDREDS OF OTHER PAGES. ANY CHANGE MADE HERE WILL AFFECT ALL THESE PAGES SIMULTANEOUSLY, INCLUDING PAGES DEALING WITH MANY TYPES OF DEVICES. SO DO NOT EDIT THIS PAGE UNLESS YOU KNOW '''EXACTLY''' WHAT YOU ARE DOING.  THANKS!}}
+</noinclude>{{Note|heading=DISCLAIMER|note=<!--'''Modifying or replacing your device's software may void your device's warranty, lead to data loss and/or other damage, and therefore must be done fully at your own risk. SailfishOS Porters team members are in no way responsible for your actions and any potential damage that might occur to your device(s).'''-->
+=Rules that you must agree to before using these images=
+
+Before you use our testing feeds, please read and agree to the following rules:
+[[File:Fire.png|frameless|right]]
+# Anyone participating in SailfishOS Ports alpha or beta testing of any kind must be prepared to fully {{#ifeq:{{{device_codename}}}|qemux86| delete their VirtualBox Appliance|erase and reflash their device}} at a moment's notice without warning and without any regrets or complaints.
+
+
+# They must be prepared to and able to log into the command line on the {{#ifeq:{{{device_codename}}}|qemux86|VirtualBox emulator|device}} and type Linux commands when instructed to do so. If you are not intimately familiar with linux GO NO FURTHER
+# They must be prepared to go to great and extraordinary lengths to try and reliably reproduce any problems they encounter.
+# They must give full and detailed bug reports, leaving out no piece of information which could possibly be remotely connected to the problem.
+# They must read any and all documentation and forums threads (in their entirety) before asking a question.
+# They must fastidiously follow the IRC Channel where the alpha testing is being discussed by the authors, and follow precisely any instructions given there.
+# They will never post the raw testing feed URLs or instructions anywhere, but will always refer others directly to this page using only the URL brocken!
+# When asking for help, they will include the phrase (which may change occasionally) "I've read and understand the rules". Failure to include the phrase will result in the request for help being silently ignored.
+
+If you're not prepared to do *all* the above, and do it all in good spirit, then please wait for the public release of the item.
+
+If you are prepared to do *all* the above, then by all means please participate in the alpha or beta testing.
+
+Note that everything above is a function of attitude, not of skill.
+{{#ifeq:{{{device_codename}}}|qemux86||
+<big>These images do NOT constitute a ROM, They are individual pieces and NOT intended or expected to be included in any ROM</big>}}
+
+}}

@@ -1,0 +1,99 @@
+__NOEDITSECTION__
+
+Officially-supported SailfishOS devices<!--T:1-->
+
+__NOTOC__
+
+<!--T:2-->
+{{tip|tip=Choose a filter criteria (i.e., select from the ''vendor'' options) to view the specified devices.}}
+
+<br />
+<p id="sfosDeviceFilterList">{{Devices_ALL|function=new_grid_view}}</p>
+
+<div id="sfosDeviceFilterEmptyNote">
+<!--T:3-->
+No devices have been selected.  Change the filters above to see the results here! Remember to select the appropriate vendor. If you are uncertain about the name of the vendor, select <b>show all devices</b>.</div>
+
+== SailfishOS for Android Devices == <!--T:4-->
+
+<!--T:5-->
+Don't see your device in the list above?
+
+<!--T:6-->
+SailfishOS for Android Devices is made by voluntary. Not all of these devices are currently being worked on by SailfishOS Porters and therefore cannot be officially supported by SailfishOS Porters at this time. 
+	
+
+== Add a new official device to the wiki == <!--T:7-->
+
+<div class="mw-collapsible mw-collapsed"><!--T:8-->
+Select '''[Expand]''' to the right for instructions.
+<div class="mw-collapsible-content">
+
+<div style="background:#27AAE1; color:#fff; padding: 4px; text-align:center;"><!--T:9-->
+'''Add a device to the wiki'''</div>
+
+<!--T:10-->
+{{note|note=<div style="font-size:120%">In following these steps, replace CODENAME with the codename for the device.</div>}}
+
+<!--T:11-->
+'''1. Set up the device template'''
+: The device template is the "universal settings" template, one per device. Copy the [{{fullurl:Template:Device_CODENAME|action=edit}} generic device template], then paste it into a new page with following template name:
+
+<!--T:12-->
+::<code>Template:Device_CODENAME</code>
+
+<!--T:13-->
+:(Example:  [[Template:Device_Grouper|Template:Device_Grouper]] for the Nexus 7 tablet.)
+
+<!--T:14-->
+:Then edit the form, filling in as many fields as you are able, and save the new template you have created. (EDIT THE '''NEW''' TEMPLATE FOR YOUR DEVICE. DO NOT EDIT THE GENERIC BLANK ITSELF!)
+
+<!--T:15-->
+'''2. Add it to the list'''
+:Next, view the source of [[Template:devices_ALL|this template]] and find the following appropriate place for your device to appear in the list. Then add the following line to the list of devices:
+
+::<code><nowiki>{{Device_CODENAME|function={{{function}}}}}</nowiki></code>
+
+<!--T:16-->
+:Then reload the page.  You should now see a link where you added the line.
+
+<!--T:17-->
+'''3. Create the device ''Info'' page'''
+:Click on the generated (red) link for the device.  It should take you to the following empty "info" page:
+
+::<code>CODENAME_Info</code>
+
+<!--T:18-->
+:In this page, simply insert the following single line of content:
+
+::<code><nowiki>{{Device_CODENAME|function=Device_info}}</nowiki></code>
+
+<!--T:19-->
+'''4. Create the device ''How To Install'' page'''
+:From the device Info page created in the previous step, on the (red) auto-generated link for the device installation instructions.  It should take you to the following empty "How To Install" page:
+
+::<code>Install_SailfishOS_for_CODENAME</code>
+
+<!--T:20-->
+:In this page, simply insert the following single line of content:
+
+::<code><nowiki>{{Device_CODENAME|function=Device_install}}</nowiki></code>
+
+<!--T:21-->
+:Save the page.  You now should see an auto-generated installation walkthrough page for the device.
+
+<!--T:22-->
+'''5. Create the device ''Build Walkthrough'' page'''
+:Next, to auto-generate a SailfishOS Ports build guide for this device, scroll to the bottom where it links (in red) to the Build Walkthrough for the device.  It should take you to an empty "build for" page:
+
+::<code>Build_for_CODENAME</code>
+
+<!--T:23-->
+:In this page, simple insert the following single line of content:
+
+::<code><nowiki>{{Device_CODENAME|function=Device_build}}</nowiki></code>
+
+<!--T:24-->
+'''That's it!'''
+
+</div></div>

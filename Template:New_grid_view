@@ -1,0 +1,5 @@
+<span class="device" data-searchable="{{{device_vendor_longname|}}} {{{device_name|}}} {{{device_codename|}}}" data-type="{{{device_type|Error}}}" data-vendor="{{{device_vendor_longname|Error}}}" data-sfosversions="{{#if:{{{device_sfos_versions_supported}}}|{{{device_sfos_versions_supported}}}|N/A}}" data-soc="{{{device_soc|N/A}}}" data-cpucores="{{{device_cpu_cores|N/A}}}" data-cpufreq="{{{device_cpu_frequency|N/A}}}" data-ram="{{{device_ram|N/A}}}" data-screendimension="{{{device_screen_dimension|}}}">[[{{{device_codename}}}_Info|
+<span class="image">{{#if:{{{device_image|}}}|<img src="{{filepath:{{{device_image}}}|200}}" alt="{{{device_codename|}}}" />}}</span>
+<span class="name">{{{device_vendor_longname|Error}}} {{{device_name|Error}}}</span>
+<span class="codename">{{{device_codename|Error}}}</span>
+]]</span>

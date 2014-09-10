@@ -1,0 +1,41 @@
+<noinclude>
+{{warning
+|heading=DO NOT EDIT THIS!
+|warning=THIS PAGE IS NOT A REGULAR WIKI PAGE. THIS IS A WIKI *TEMPLATE* AUTO-INCLUDED INTO POTENTIALLY HUNDREDS OF OTHER PAGES.  ANY CHANGES MADE HERE WILL AFFECT ALL THESE PAGES SIMULTANEOUSLY, INCLUDING PAGES DEALING WITH MANY TYPES OF DEVICES. SO DO NOT EDIT THIS PAGE UNLESS YOU KNOW '''EXACTLY''' WHAT YOU ARE DOING. THANKS!}}
+</noinclude>This guide will walk you through the process of {{#ifeq:{{{device_codename}}}|qemux86|installing the lastest version of the VirtualBox Appliance |taking the [[{{{device_codename}}}_Info|{{{device_name}}}]] from stock to having ability to flash the latest version }} of LuneOS.
+
+{{disclaimer|device_codename={{{device_codename|}}}}}
+
+{{DISPLAYTITLE:How To Install LuneOS for {{{device_vendor_longname}}} {{{device_name}}} ("{{{device_codename}}}")}}
+__TOC____NOEDITSECTION__<!-- UNLOCK BOOTLOADER IF NECESSARY  -- this includes Gfree and oem unlock on nexus devices -->
+<!--SHOW NOTES IF IT EXISTS -->
+{{#if:{{{device_notes|}}}|==Important Notes==
+{{{device_notes}}}}}
+<!-- UNLOCK BOOTLOADER-->
+{{#if:{{{device_is_nexus_device|}}}{{{device_oem_unlock_command|}}}|{{Unlock_Bootloader
+|device_name={{{device_name|}}}
+|device_codename={{{device_codename|}}}
+|device_recovery_boot_steps={{{device_recovery_boot_steps|}}}
+|device_is_nexus_device={{{device_is_nexus_device|}}}
+|device_oem_unlock_command={{{device_oem_unlock_command|}}} }}}}
+{{#if:{{{device_is_nexus_device|}}}||{{#ifeq:{{{device_vendor|}}}|asus|{{Unlock Bootloader Asus
+|install_file={{{install_file}}}|install_md5sum={{{install_md5sum}}}|install_devname={{{install_devname}}}|device_recovery_boot_steps={{{device_recovery_boot_steps}}}|devicename={{{device_name}}}
+|device_codename={{{device_codename}}}}}}}}}{{#if:{{{device_motopocalypse|}}}|{{Motopocalypse|device_name={{{device_name}}}}}}}{{#if:{{{device_sonyunlock|}}}|{{Unlock Bootloader Sony|devicename={{{device_name}}}|bootsteps={{{device_fastboot_boot_steps}}}}}}}
+<!-- DOWNLOAD/INSTALL RECOVERY-->
+<!--
+{{#ifeq:{{{install_exploit|}}}|razrsedge|{{root_razrs_edge|device_name={{{device_name}}}}}}}{{#ifeq:{{{install_exploit|}}}|razrblade|{{root_razrblade?|device_name={{{device_name}}}}}}}{{#ifeq:{{{install_exploit|}}}|motofail|{{root_motofail|device_name={{{device_name}}}}}}}
+{{#ifeq:{{{device_codename|}}}|Tenderloin|{{Tenderloin_Install_Steps}}}}{{#if:{{{device_recovery_install_method|}}}|{{recovery_install_{{{device_recovery_install_method}}}
+|install_file={{{install_file}}}|install_devname={{{install_devname}}}|install_md5sum={{{install_md5sum}}}|device_codename={{{device_codename}}}|device_name={{{device_name}}}}}}}
+{{#if:{{{install_samsung_recoverytype|}}}|{{Samsung install|device_name={{{device_name}}}|install_samsung_recoverytype={{{install_samsung_recoverytype}}}|install_file={{{install_file}}}|install_devname={{{install_devname}}}|install_md5sum={{{install_md5sum}}}|device_recovery_boot_steps={{{device_recovery_boot_steps}}}|device_download_mode_steps={{{device_download_mode_steps}}}}}}}
+{{#if:{{{device_hboot|}}}|{{Htc install|device_name={{{device_name}}}|device_hboot={{{device_hboot}}}|install_file={{{install_file}}}|install_devname={{{install_devname}}}|install_md5sum={{{install_md5sum}}}}}}}
+{{#if:{{{device_htcunlock|}}}|{{Htcdev install|device_name={{{device_name}}}|device_hboot={{{device_hboot}}}|install_file={{{install_file}}}|install_devname={{{install_devname}}}|install_md5sum={{{install_md5sum}}}}}}}
+{{#if:{{{device_facepalm|}}}|{{Htcfacepalm install|device_name={{{device_name}}}|device_hboot={{{device_hboot}}}|install_file={{{install_file}}}|install_devname={{{install_devname}}}|ruu_file={{{ruu_file}}}|cid_block={{{cid_block}}}|cid_stock={{{cid_stock}}}|install_md5sum={{{install_md5sum}}}}}}}
+-->
+{{#if:{{{device_recovery_install_method|}}}|{{recovery_install_{{{device_recovery_install_method}}}
+|install_file={{{install_file}}}|install_devname={{{install_devname}}}|install_md5sum={{{install_md5sum}}}|device_codename={{{device_codename}}}|device_name={{{device_name}}}|device_recovery_boot_steps={{{device_recovery_boot_steps|}}}}}}}
+<!-- DOWNLOAD/INSTALL SFOS-->
+{{#if:{{{device_sonyunlock|}}}|{{install SFOS on Sony|device_name={{{device_name}}}|device_codename={{{device_codename}}}|device_longname={{{device_longname}}}|bootsteps={{{device_fastboot_boot_steps}}}}}
+|{{#ifeq:{{{device_codename}}}|qemux86|{{install SFOS Emulator}}|{{#ifeq:{{{device_codename|}}}|Tenderloin|{{Tenderloin_Install_Steps}}|{{install SFOS from Recovery|device={{{device_name}}}|device_recovery_twrp={{{device_recovery_twrp}}}
+|device_name={{{device_name}}}|device_codename={{{device_codename}}}|device_longname={{{device_longname}}}|device_htcunlocklegacy={{{device_htcunlocklegacy|}}}|device_htcunlock={{{device_htcunlock|}}}|device_recovery_boot_steps={{{device_recovery_boot_steps|}}}}}}}}}}}
+
+{{Reportissuestip}}

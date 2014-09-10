@@ -1,0 +1,44 @@
+<noinclude>
+{{warning
+|heading=DO NOT EDIT!
+|warning=THIS PAGE IS NOT A REGULAR WIKI PAGE.  IT IS A WIKI *TEMPLATE* AUTO-INCLUDED INTO POTENTIALLY HUNDREDS OF OTHER PAGES.  ANY CHANGE MADE HERE WILL AFFECT ALL THESE PAGES SIMULTANEOUSLY, INCLUDING PAGES DEALING WITH MANY TYPES OF DEVICES.  SO DO NOT EDIT THIS PAGE UNLESS YOU KNOW '''EXACTLY''' WHAT YOU ARE DOING.  THANKS!}}
+</noinclude><h2>How to Build SailfishOS
+for {{{device_name}}} (codename: {{{device_codename}}})</h2>
+
+{{note|note=This Build SailfishOs build walkthrough is auto-generated specifically for the [[{{{device_codename}}}_Info|{{{device_name}}}]] based on the device template at [{{fullurl:Template:device_{{{device_codename}}}|action=edit}} Template:device_{{{device_codename}}}].  You can find similar build instructions for every officially supported device.  See [[devices|here]] for more info.}}
+
+
+
+__TOC____NOEDITSECTION__
+{{DISPLAYTITLE:How To Build SailfishOS for {{{device_vendor_longname}}} {{{device_name}}} ("{{{device_codename}}}")}}
+{{sfos1 build intro
+|device_name={{{device_name}}}
+|device_codename={{{device_codename}}}
+|device_vendor={{{device_vendor}}}
+}}
+<!--{{#if:{{{device_is_nexus_device|}}}{{{device_oem_unlock_command|}}}|{{Unlock Bootloader
+|device_name={{{device_name}}}
+|device_codename={{{device_codename}}}
+|device_vendor={{{device_vendor}}}
+|device_is_nexus_device={{{device_is_nexus_device}}}
+|device_oem_unlock_command={{{device_oem_unlock_command}}}
+|device_recovery_boot_steps={{{device_recovery_boot_steps}}}
+}}}}-->
+{{sfos1 build
+|device_name={{{device_name}}}
+|device_codename={{{device_codename}}}
+|device_vendor={{{device_vendor}}}
+|device_local_manifest={{{device_local_manifest|}}}
+|branch={{{device_last_WOP_branch_supported|}}}
+}}
+{{sfos1 install
+|device_name={{{device_name}}}
+|device_codename={{{device_codename}}}
+|device_vendor={{{device_vendor}}}
+|device_recovery_install_method={{{device_recovery_install_method|}}}
+}}
+{{sfos1 build help
+|device_name={{{device_name}}}
+|device_codename={{{device_codename}}}
+|device_vendor={{{device_vendor}}}
+}}

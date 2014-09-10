@@ -1,0 +1,507 @@
+/* general */
+code {
+  color: green;
+}
+
+table.singleborder {
+  border: 1px solid #333;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin: 0.4em 0;
+}
+table.singleborder td,
+table.singleborder th {
+  border: 1px solid #333;
+  padding: 3px;
+}
+
+/** START CSS FOR HOME PAGE **/
+
+/* Body formatting */
+.mainBodyText {
+   font-family:Helvetica,sans-serif; 
+   font-size: 1.25em;
+   color:#424242; 
+}
+.tableBodyHeading {
+   font-family:sans-serif; 
+   font-size: 1em;
+   font-weight: bold;
+   color:#424242; 
+}
+.tableBodyText {
+   font-family:sans-serif; 
+   font-size: 1em;
+   color:#424242; 
+}
+.tbl_generalContent {
+cellspacing:0;
+cellpadding:1;
+valign:center; 
+width:50%;
+border: 1px solid #878787;
+}
+.tbl_generalContentCells {
+/** border: 1px solid #878787; **/
+}
+a.homePageLink:link, a.homePageLink:visited{ 
+  background:transparent; 
+  font-family:sans-serif; 
+  font-weight:bold;   
+  text-decoration:none;
+  color:#424242 
+}
+a.homePageLink:hover{ 
+  background:transparent; 
+  font-family:sans-serif; 
+  font-weight:bold; 
+  text-decoration:underline; 
+  color:#676D91; 
+}
+/* End Body Formatting */
+
+/* Start Navigation Menu Formatting */
+.tbl_navMenu {
+   cellspacing:2; 
+   cellpadding:0; 
+   align:center;
+   valign:center;
+   width:90%; 
+   border: 1px solid #878787;
+}
+.tbl_navMenu_pageLinkContainer {
+   border: 2px solid #878787;
+}
+.tbl_navMenu_iconRow {
+   height:150px;
+}
+.tbl_navMenu_icon {
+   align:center;
+}
+.tbl_navMenu_linkRow {
+   height:20px;
+}
+.tbl_navMenu_linkedPageTitle {
+   text-align:center;
+   vertical-align:bottom;
+   font-family:Helvetica,sans-serif; 
+   font-size: 1.25em; 
+   font-weight:bold;
+   color:#424242;
+}
+.tbl_navMenu_spacer {
+   align:center;
+   height:3px;
+}
+.tbl_navMenu_linkedPageDescription {
+   min-height:70px;
+}
+.tbl_navMenu_linkedPageDescription {
+   align:center;
+   text-align:center;
+   font-size: 0.9em; 
+   font-family:Helvetica,sans-serif; 
+   color:#858585;
+}
+/* End Navigation Menu Formatting */
+/** END CSS FOR HOME PAGE **/ 
+
+
+/** START CSS FOR NEW-STYLE GENERAL WIKI PAGES **/
+/* Start Breadcrumb Trail Formatting */
+.tbl_breadcrumbs {
+   cellspacing:0; 
+   cellpadding:0; 
+   align:left;
+   valign:center;
+   width:100%; 
+   border: 1px solid #878787;
+   border-radius: 5px;
+   background: #f1f7f6;
+}
+.BreadcrumbsText {
+   font-family:Helvetica,sans-serif; 
+   font-size: 0.7em; 
+}
+/* End Breadcrumb Trail Formatting */
+
+/* Start Section Headings Formatting */
+.STD_SectionHeading {
+   font-family:Helvetica,sans-serif; 
+   font-size: 1.5em; 
+   /*font-weight:bold;*/
+   color:#424242;
+}
+/* End Section Headings Formatting */
+
+/* Start Contents Formatting */
+.STD_ContentsStyle {
+   width:60%;
+   font-family:Helvetica,sans-serif; 
+   font-size: 0.9em; 
+   color:#e1ddcf;
+}
+.STD_ReturnToContentsLink {
+   font-family:Helvetica,sans-serif; 
+   font-size: 0.7em; 
+   color:#C2C2C2;
+}
+/* End Section Headings Formatting */
+
+/* Start General Formatting */
+.STD_ImageCaptionStyle {
+   font-family:Helvetica,sans-serif; 
+   font-size: 0.8em; 
+   color:#A1A1A1;
+   text-align:center;
+}
+.STD_BodyTextStyle {
+   font-size: 1.33em; 
+  /* font-family:sans-serif; */
+   font-family:"Lucida Grande", Geneva, Arial, Verdana, sans-serif;
+   color:#404040;
+   line-height:168%;
+}
+.STD_BodyTextSubHeadings{
+   font-family:Helvetica,sans-serif; 
+   font-size: 1.5em; 
+   font-weight:bold;
+   color:#808080;
+   line-height:168%;
+}
+.STD_BodyScreenshot {
+   align:center;
+}
+.tbl_GridScreenshot {
+   align:center;
+   width:90%; 
+   border: 1px solid #878787;
+ }
+/* End General Formatting */
+/** END CSS FOR NEW-STYLE GENERAL WIKI PAGES **/
+
+
+
+/* note, helpful tip and warning boxes */
+.infoBox .bar,
+.warningBox .bar,
+.editDeviceTemplateBox .bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 68px;
+  background: no-repeat center center;
+}
+.infoBox .bar {
+  /* background-color: #333; */
+  background-image: url(/images/b/b0/Mini-cid-logo-2.png);
+}
+.warningBox .bar {
+  background-color: #d22;
+  background-image: url(/images/e/e5/Mini-cid-logo-grey-2.png);
+}
+.editDeviceTemplateBox .bar {
+  /* background-color: #333; */
+  background-image: url(/images/6/66/Device_template.png);
+}
+
+/* box with specs of each device */
+.deviceInfoBox td,
+.deviceInfoBox th {
+  vertical-align: top;
+  text-align: left;
+  padding: 3px 8px;
+}
+.deviceInfoBox th {
+    white-space: nowrap;
+}
+
+/* main page modifications */
+body.page-Main_Page h1.firstHeading {
+  display: none;
+}
+#mainPageHeader a {
+  color: #27aae1; 
+}
+
+/** experimental: device page - get sfos section **/
+/* see http://wiki.cyanogenmod.org/w/User:Flo_Edelmann/Device_Redesign */
+
+div#content .device-get-sfos a {
+  display: inline-block;
+  background: no-repeat center 10px #fafafa;
+  color: #555;
+  padding: 88px 10px 10px;
+  width: 20%;
+  margin: 4px;
+  overflow: none;
+  text-align: left;
+  vertical-align: top;
+  text-decoration: none;
+}
+@media all and (max-width: 1250px) {
+  div#content .device-get-sfos a {
+    width: 40%;
+  }
+}
+@media all and (max-width: 900px) {
+  div#content .device-get-sfos a {
+    width: auto;
+    display: block;
+  }
+}
+.device-get-sfos a b {
+  display: block;
+  text-align: center;
+  margin: 0 0 10px;
+  color: #017dbb;
+}
+.device-get-sfos a em {
+  font-weight: bold;
+  font-style: normal;
+  border-bottom: 2px solid #555;
+}
+div#content .device-get-sfos a:hover,
+div#content .device-get-sfos a:focus {
+  background-color: #cef;
+}
+div#content .device-get-sfos a:hover em,
+div#content .device-get-sfos a:focus em {
+  border-color: #555;
+}
+
+div#content .device-get-sfos .nightly a { background-image: url(/images/5/5f/Device-get-nightly.png); }
+.device-get-sfos .nightly a em { border-color: #ff2000; }
+
+div#content .device-get-sfos .m-snapshot a { background-image: url(/images/0/05/Device-get-m-snapshot.png); }
+.device-get-sfos .m-snapshot a em { border-color: #ffd900; }
+
+div#content .device-get-sfos .release-candidate a { background-image: url(/images/6/6f/Device-get-release-candidate.png); }
+.device-get-sfos .release-candidate a em { border-color: #ccf200; }
+
+div#content .device-get-sfos .stable a { background-image: url(/images/7/70/Device-get-stable.png); }
+.device-get-sfos .stable a em { border-color: #1bb200; }
+
+.device-build-sfos {
+  font-size: 1em;
+  color: #555;
+  overflow: hidden;
+  text-align: center;
+  text-transform: uppercase;
+}
+.device-build-sfos:before,
+.device-build-sfos:after {
+    background-color: #555;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+.device-build-sfos:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+.device-build-sfos:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+/**** start: DEVICE PAGE WITH FILTERS ****/
+
+/** basic styling **/
+#sfosFilter {
+  position: relative;
+  margin: 1ex 0 2ex;
+  vertical-align: bottom;
+}
+#advancedButton {
+  display: inline-block;
+  text-decoration: none;
+  margin: 15px 0;
+  color: #888;
+  padding: 0 0 0 18px;
+  background: url(/images/6/6d/Expand.png) no-repeat left center;
+}
+#advancedButton.expanded {
+  background-image: url(/images/a/ab/Collapse.png);
+}
+#advancedButton:hover,
+#advancedButton:focus {
+  text-decoration: underline;
+}
+#advancedFilters {
+  position: relative;
+  margin: 0 0 2ex;
+}
+#advancedFilters.collapsed {
+  display: none;
+}
+
+#allDevicesButton {
+  margin-left: 2ex;
+}
+
+/** filter input **/
+#sfosFilter input {
+  border: 1px solid #27aae1;
+  border-width: 0 0 1px;
+  padding: 3px 5px;
+  margin: 0;
+  background: none;
+  vertical-align: bottom;
+}
+#sfosFilter .holoInput:before,
+#sfosFilter .holoInput:after {
+  border: 1px solid #27aae1;
+  border-width: 0 1px 0 0;
+  content: "";
+  height: 5px;
+  width: 0;
+  display: inline-block;
+  vertical-align: bottom;
+}
+#sfosFilter .holoInput:after {
+  margin-right: 2ex;
+}
+
+
+/** dropdowns **/
+#sfosFilter a.dropdown {
+  margin: 0 1ex;
+  padding: 4px;
+  color: #888;
+  text-decoration: none;
+  font-size: 90%;
+  vertical-align: bottom;
+  background: #eee;
+  border: 1px solid #dadada;
+}
+#sfosFilter a.dropdown:hover,
+#sfosFilter a.dropdown:focus,
+#sfosFilter a.dropdown[data-active] {
+  background: #ddd;
+  outline: 0;
+}
+#sfosFilter a.dropdown span.selected-0 {
+  color: #d00;
+}
+#sfosFilter a.dropdown b {
+  margin-right: 1ex;
+  color: #444;
+  font-size: 120%;
+}
+#sfosFilter a.dropdown * {
+  vertical-align: bottom;
+}
+#sfosFilter a.dropdown:after {
+  content: "";
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border: 3px solid;
+  border-color: transparent #444 #444 transparent;
+  vertical-align: bottom;
+  margin: 0 0 0 4px;
+}
+#sfosFilter ul.dropdownMenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: solid #dadada;
+  border-width: 1px 1px 0 1px;
+  background: #eee;
+  display: none;
+  max-height: 300px;
+  max-height: 50vh;
+  overflow: auto;
+  min-width: 150px;
+  z-index: 10;
+}
+#sfosFilter ul.dropdownMenu li {
+  border-bottom: 1px solid #dadada;
+  color: #444;
+  cursor: default;
+  padding: 4px 6px 4px 30px;
+  margin: 0;
+  background: url(/images/d/de/Checkbox-unchecked.png) no-repeat 6px center;
+  min-height: 1em;
+}
+#sfosFilter ul.dropdownMenu li.checked {
+  background-color: #8cd;
+  background-image: url(/images/9/9d/Checkbox-checked.png);
+  border-color: #4ac;
+}
+#sfosFilter ul.dropdownMenu li.buttons {
+  background: none;
+  padding: 4px;
+}
+#sfosFilter ul.dropdownMenu li.buttons span {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+}
+#sfosFilter ul.dropdownMenu li.buttons a {
+  font-variant: small-caps;
+  text-decoration: none;
+  color: #888;
+}
+#sfosFilter ul.dropdownMenu li.buttons a:hover,
+#sfosFilter ul.dropdownMenu li.buttons a:focus {
+  text-decoration: underline;
+}
+
+
+/** device list **/
+#sfosDeviceFilterList {
+  margin: 1ex 0;
+}
+#sfosDeviceFilterList .device a {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  background: #fafafa;
+  overflow: hidden;
+  margin: 10px 4px;
+  vertical-align: top;
+  text-decoration: none;
+  color: #333;
+  padding: 2px 2px 5px;
+}
+#sfosDeviceFilterList .device a:hover,
+#sfosDeviceFilterList .device a:focus {
+  background: #cef;
+}
+#sfosDeviceFilterList .device a:active {
+  background: #27aae1;
+}
+#sfosDeviceFilterList .device .image {
+  display: block;
+  height: 150px;
+  line-height: 150px;
+  padding: 10px;
+}
+#sfosDeviceFilterList .device .image img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+}
+#sfosDeviceFilterList .device .codename {
+  display: block;
+  font-size: 0.8em;
+  color: #888;
+}
+#sfosDeviceFilterList .device[data-hidden] {
+  display: none;
+}
+
+#sfosDeviceFilterEmptyNote {
+  background: url(/images/2/2f/Cid-filter-empty-note.png) no-repeat 40px 0;
+  padding: 42px 0 0 150px;
+  min-height: 104px;
+}
+#sfosDeviceFilterEmptyNote[data-hidden] {
+  display: none;
+}

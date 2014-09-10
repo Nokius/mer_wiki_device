@@ -1,0 +1,46 @@
+<noinclude>
+{{warning
+|heading=DO NOT EDIT!
+|warning=THIS PAGE IS NOT A REGULAR WIKI PAGE.  IT IS A WIKI *TEMPLATE* AUTO-INCLUDED INTO POTENTIALLY HUNDREDS OF OTHER PAGES.  ANY CHANGE MADE HERE WILL AFFECT ALL THESE PAGES SIMULTANEOUSLY, INCLUDING PAGES DEALING WITH MANY TYPES OF DEVICES.  SO DO NOT EDIT THIS PAGE UNLESS YOU KNOW '''EXACTLY''' WHAT YOU ARE DOING.  THANKS!}}
+</noinclude>== Installing recovery using fastboot ==
+
+You can use fastboot to install your recovery image to the device.
+
+'''Installing ClockworkMod Recovery on the {{{device_name}}}'''
+# Your {{{device_name}}} should still be connected to your PC via USB from the last step
+# Power off the {{{device_name}}} and activate the bootloader {{{device_recovery_boot_steps}}} 
+# Once the device is in fastboot mode, verify your PC sees the device by typing <code>fastboot devices</code>
+#*If you don't see your device serial number, and instead see "<waiting for device>", fastboot is not configured properly on your machine. See  [[Doc:_fastboot_intro|fastboot]] documentation for more info.
+# On your PC, download the [http://www.clockworkmod.com/rommanager latest ClockworkMod] recovery image (at time of writing, 6.0.4.5)
+# Flash CWM to your {{{device_name}}}, making sure to use the proper filename for the image you downloaded:
+<code>
+  $ fastboot flash recovery recovery-clockwork-6.0.4.5-{{#lowercase:{{{device_codename}}}}}.img
+  sending 'recovery' (6526 KB)...
+  OKAY [  0.802s]
+  writing 'recovery'...
+  OKAY [  1.245s]
+  finished. total time: 2.048s
+  $ fastboot reboot
+  rebooting...
+  
+  finished. total time: 0.020s
+</code>
+<ol start="7">
+<li> Reboot to bootloader, by powering off, then {{{device_recovery_boot_steps}}} 
+<li> Use the Volume Up or Volume Down key to select "Recovery mode", and the Power button to enter recovery.</li>
+<li> At this point, ClockworkMod should load.</li>
+</ol>
+<!--
+{{#if:{{{install_file|}}}|
+#Download {{{install_devname}}}'s ClockworkMod Recovery.
+#*{{{install_devname}}}'s ClockworkMod Recovery: [{{{install_file}}} download] 
+#*:md5: <code>{{{install_md5sum}}}</code>
+}}
+# Connect the {{{device_name}}} to the computer via USB.
+# Make sure the fastboot binary is in your [[Template:Paths|PATH]] or that you place the downloaded image in the same directory as fastboot.
+#Open a terminal on your PC and reboot the device into fastboot mode by typing <code>adb reboot bootloader</code> or by using the hardware key combination.
+#Once the device is in fastboot mode, verify your PC sees the device by typing <code>fastboot devices</code>
+#*If you don't see your device serial number, and instead see "<waiting for device>", fastboot is not configured properly on your machine. See  [[Doc:_fastboot_intro|fastboot]] documentation for more info.
+#Flash ClockworkMod Recovery onto your device by entering the following command: <code>fastboot flash recovery your_recovery_image.img</code> where the latter part is the name of the file you downloaded.
+#Once the flash completes successfully, reboot the device into recovery to verify the installation. This can be done by typing <code>fastboot boot your_recovery_image.img</code>.
+#*Note: Some ROMs overwrite recovery at boot time so if you do not plan to immediately boot into recovery to install SailfishOS Ports , please be aware that this may overwrite your custom recovery with the stock one.-->

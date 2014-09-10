@@ -1,0 +1,85 @@
+<!-- 
+NOTICE: THIS IS A GENERIC "BLANK" TEMPLATE TO BE EDITED FOR YOUR DEVICE AND COPIED TO:
+
+Template:Device_CODENAME
+
+Where CODENAME is the correct codename for your device. Using this template, you can automatically generate as device information pages, installation instructions, build walkthroughs, etc. and ensure that the instructions for each device are complete and uniformly presented.
+
+This template is annotated. Do be sure to fill out all required sections, but feel free to leave fields blank as when optional. You may also uses spaces, commas, and multiple lines and even links and other wiki formatting!
+Note: If you need to add a section, make sure to inform others about it, e.g. here: http://wiki.cyanogenmod.org/w/Wiki_Problems
+
+Also we recommend that you delete this notice and the tip below when you make your own device_CODENAME page so that you do not confuse any new maintainers of that page in the future. Good luck! :)
+-->
+<noinclude>
+{{tip|tip= This page is to be used as a '''reference''' and is used to create your own device_CODENAME page.  If you are adding a device, copy/paste the contents of this page into a new, blank template and fill in all the relevant fields.  DO NOT modify this page itself.  Additional information/documentation is included in the source of this page.
+}}
+</noinclude>
+
+{{{{{function}}}<!-- don't touch this line -->
+|link_kind={{{link_kind}}}<!-- don't touch this either. Used for generating links -->
+|device_name=<!-- REQUIRED. Example: Nexus 7 -->
+|device_codename=<!-- REQUIRED. case sensitive - use all lower case examples: grouper, sholes, tuna, etc. -->
+|device_vendor=<!-- REQUIRED. case sensitive - use all lower case.  Used in all directories/URLs on CM repos.  Example: htc, samsung, bn, lge, hp, etc. -->
+|device_vendor_longname=<!-- REQUIRED. Upper and/or lower case and spaces. Example: Samsung, Barnes & Noble, HTC, LGE, Hewlett Packard, etc. -->
+|device_recovery_install_method=<!-- optional. Choose the method used to flash the recovery. Options are: fastboot, flash_image, dd, or leave blank if the flashing is covered in the CM flashing instructions (such as with most Samsung / HTC devices) --> 
+|device_manufacturer=<!-- optional. Note: This is NOT the code used in CM directories (that would be device_vendor) but is provided just for additional info -->
+|device_CM_versions_supported=<!-- optional, but you should put something here. Use major CM releases such as: 7, 9, 10, 10.1, etc. -->
+|device_last_CM_branch_supported=<!-- optional. For older devices. Change to the branch name, in lowercase, as used in the repo init. Examples: ics, gingerbread, froyo, etc. IF THIS IS NOT SET, THE LATEST VERSION OF CM IS ASSUMED TO WORK. -->
+|device_aka=<!-- optional. Include any other device names. Wiki redirects can point to the same page. -->
+|device_notes=<!-- optional. You can put as many lines of description as you like here. -->
+|device_release_date=<!-- optional. {{#dateformat:2012 July 8}} -->
+|device_carrier=<!-- optional, but include any mobile companies that apply. Example: AT&T, Vodaphone -->
+|device_recovery_boot_steps=<!-- optional. Please bold any button names in instructions for easy reading. Example: '''Volume Down''' & '''Power''' -->
+|device_recovery_twrp=<!-- optional. If set to true, instructions related to TWRP are displayed instead of CWM-based recoveries. False by default, only necessary for devices that do not provide a workable CWM-based recovery. i.e. Kindle Fire devices -->
+|device_bootloader_boot_steps=<!-- optional. Please bold any button names in instructions for easy reading. Example: '''Volume Down''' & '''Power''' -->
+|device_fastboot_boot_steps=<!-- optional. Please bold any button names in instructions for easy reading. Example: '''Volume Down''' & '''Power''' -->
+|device_image=<!-- optional link to local graphic of the device -->
+|device_soc=<!-- optional. System On a Chip version. Include the manufacturer, if possible an abbreviation. Examples: Samsung Exynos 4210, NVIDIA Tegra 2, TI OMAP4460 -->
+|device_cpu=<!-- optional. Example: Cortex A8 -->
+|device_cpu_frequency=<!-- optional. Example: 1.2 GHz -->
+|device_cpu_cores=<!-- optional. Example: dual -->
+|device_ram=<!-- optional. Example: 1GB -->
+|device_gpu=<!-- optional. Examples: Mali-400, PowerVR SGX540 -->
+|device_type=<!-- optional. Examples: phone, tablet, game console, etc. -->
+|device_weight=<!-- optional. Example: 118 g (4.2 oz) -->
+|device_dimensions=<!-- optional. Example: 122 mm (4.82 in) (h)<br />64 mm (2.53 in) (w)<br />9.9 mm (0.39 in) (d) -->
+|device_screen_dimension=<!-- optional. Example: 102 mm (4.0 in) -->
+|device_screen_resolution=<!-- optional. Example: 1280x720, 1280x800 (WXGA) -->
+|device_screen_density=<!-- optional. Example: 220 ppi -->
+|device_screen_technology=<!-- optional. Example: IPS LCD, Super AMOLED+, TFT LCD -->
+|device_internal_storage=<!-- optional. Example: 2GB -->
+|device_sdcard=<!-- optional. Examples: up to 32GB, none -->
+|device_bluetooth=<!-- optional. Example: 3.0 -->
+|device_wifi=<!-- optional. Example: 802.11 a/b/g/n -->
+|device_gsm_frequency=<!-- optional. Example: 800 850 900 2100 MHz UMTS/HSPA+ -->
+|device_cdma_frequency=<!-- optional. Example: 2000 MHz CDMA<br />900 MHz 1xEV-DO -->
+|device_wimax_frequency=<!-- optional. Example: 802.16e -->
+|device_lte_frequency=<!-- optional. Example: 700 MHz -->
+|device_camera=<!-- optional. Example: 5MP -->
+|device_camera_flash=<!-- optional. Examples: LED, none -->
+|device_secondary_camera=<!-- optional. Example: 1.3MP -->
+|device_peripherals=<!-- optional. You can include such things as accelerometers or digital compasses -->
+|device_is_nexus_device=<!-- set this to anything to add unlock instructions to build guide. LEAVE EMPTY FOR NON-NEXUS DEVICES! -->
+|device_oem_unlock_command=<!-- non-nexus devices that still use fastboot to unlock should put the fastboot unlock command here. Nexus devices, don't use this. -->
+|device_local_manifest=<!-- set this to a link to add local_manifest.xml to build guide -->
+|device_kernel_override=<!-- replace auto-generated kernel link when device name does not match kernel name. Example: aries, smdk4210 -->
+|device_sound=<!-- optional. -->
+|device_cm_forum=<!-- optional. Example: 529-google-galaxy-nexus-gsm/ -->
+|device_irc_channel=<!-- optional. Assumes freenode IRC server. Example: #nexus7 -->
+|device_power=<!-- optional. you can put battery info, voltage, mAh, and/or how many hours of use, removable or not etc. Example: 1500 mAh-->
+|device_maintainers=<!-- optional. You can put as long a list of maintainers as you like including links. -->
+|device_contributors=<!-- optional. Put non-maintainer contributors here. -->
+|device_additional_info=<!-- optional. Last chance to put any other notes. -->
+|install_samsung_recoverytype=<!-- optional, only used for Samsung.  Examples: initramfs, initrd, or dual -->
+|install_exploit=<!-- optional. Used for an exploit that doesn't change between devices. Examples: razrsedge -->
+|install_md5sum=<!-- optional. Used for md5sum of files for use with exploits -->
+|install_devname=<!-- optional. Used for posting creator of said files for install -->
+|install_file=<!-- optional. URL for recovery/exploit -->
+|device_download_mode_steps=<!-- optional, only for Samsung. -->
+|device_hboot=<!-- optional, only for HTC -->
+|device_htcunlock=<!-- optional, only for HTC Dev Unlock -->
+|device_htcunlocklegacy=<!--use this for pre-2013 htc devices using devunlock -->
+|device_sonyunlock=<!-- optional, only for Sony(/Ericsson) Dev Unlock -->
+|device_motounlock=<!-- optional, only for Motorola Dev Unlock -->
+
+}}

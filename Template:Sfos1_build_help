@@ -1,0 +1,10 @@
+<noinclude>
+{{warning
+|heading=DO NOT EDIT!
+|warning=THIS PAGE IS NOT A REGULAR WIKI PAGE.  IT IS A WIKI *TEMPLATE* AUTO-INCLUDED INTO POTENTIALLY HUNDREDS OF OTHER PAGES.  ANY CHANGE MADE HERE WILL AFFECT ALL THESE PAGES SIMULTANEOUSLY, INCLUDING PAGES DEALING WITH MANY TYPES OF DEVICES.  SO DO NOT EDIT THIS PAGE UNLESS YOU KNOW '''EXACTLY''' WHAT YOU ARE DOING.  THANKS!}}
+</noinclude>==To get assistance==
+<!--{{Commentlink
+|section=get-assistance-for-{{{device_name}}}
+}}-->
+
+* [http://webchat.freenode.net/?channels=sailfishos-porters #sailfishos-porters] - Our IRC Channel on the Freenode Network.

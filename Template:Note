@@ -1,0 +1,10 @@
+<noinclude>
+{{warning
+|heading=DO NOT EDIT!
+|warning=THIS PAGE IS NOT A REGULAR WIKI PAGE.  IT IS A WIKI *TEMPLATE* AUTO-INCLUDED INTO POTENTIALLY HUNDREDS OF OTHER PAGES.  ANY CHANGE MADE HERE WILL AFFECT ALL THESE PAGES SIMULTANEOUSLY, INCLUDING PAGES DEALING WITH MANY TYPES OF DEVICES.  SO DO NOT EDIT THIS PAGE UNLESS YOU KNOW '''EXACTLY''' WHAT YOU ARE DOING.  THANKS!}}
+</noinclude><div class="infoBox" style="position:relative; padding:5px 5px 5px 73px; margin:0.4em 0 0.5em; background:#ddd; min-height:57px;">
+<div class="bar"></div>
+<p style="font-size:110%;">'''Note: {{#if:{{{heading|}}}| {{{heading}}}}}'''</p>
+
+{{{note}}}
+</div>

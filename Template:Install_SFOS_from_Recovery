@@ -1,0 +1,19 @@
+<noinclude>
+{{warning
+|heading=DO NOT EDIT!
+|warning=THIS PAGE IS NOT A REGULAR WIKI PAGE.  IT IS A WIKI *TEMPLATE* AUTO-INCLUDED INTO POTENTIALLY HUNDREDS OF OTHER PAGES.  ANY CHANGE MADE HERE WILL AFFECT ALL THESE PAGES SIMULTANEOUSLY, INCLUDING PAGES DEALING WITH MANY TYPES OF DEVICES.  SO DO NOT EDIT THIS PAGE UNLESS YOU KNOW '''EXACTLY''' WHAT YOU ARE DOING.  THANKS!}}
+</noinclude>== Installing SailfishOS from recovery ==
+
+{{note|note=Some devices do not have removable SD cards. Regardless, there should still be a partition on the device named "<code>/sdcard</code>" that can be used for flashing purposes, even though the contents of <code>/sdcard</code> may actually be in internal storage.}}
+# Your {{{device_name}}} should still be connected to your PC via USB from the last step
+# Your {{{device_name}}} should still be booted to ClockworkMod from the last step
+# If neither statement is currently true, please reboot to ClockworkMod. If you do not have CWM loaded, follow the steps outlined above.
+'''BROKEN FIX ME!!!'''
+# Download the [http://build.webos-ports.org/luneos-stable/images/{{#lowercase:{{{device_codename}}}}}/webos-ports-dev-package-{{#lowercase:{{{device_codename}}}}}.zip latest stable LuneOS Dev-image] or [http://build.webos-ports.org/luneos-testing/images/{{#lowercase:{{{device_codename}}}}}/webos-ports-dev-package-{{#lowercase:{{{device_codename}}}}}.zip latest nightly LuneOS Dev-image]
+# Use the Volume Up and Volume Down keys on your {{{device_name}}} to select "install zip from sideload"
+# From your PC, execute the following command:<br /><code>adb sideload webos-ports-dev-package-{{#lowercase:{{{device_codename}}}}}.zip</code><br />
+# The image will now install. It will installs both the kernel and the rootfs.
+<!-- # Reboot back to the bootloader (Power off, {{{device_recovery_boot_steps}}} )
+# Next, flash the kernel image. <br /><code>fastboot flash boot zImage-{{#lowercase:{{{device_codename}}}}}.fastboot</code><br />-->
+# Once completed, reboot the {{{device_name}}}.
+# Your system should now boot directly into SailfishOS

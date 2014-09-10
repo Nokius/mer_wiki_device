@@ -1,0 +1,164 @@
+<noinclude>
+{{warning
+|heading=DO NOT EDIT!
+|warning=THIS PAGE IS NOT A REGULAR WIKI PAGE.  IT IS A WIKI *TEMPLATE* AUTO-INCLUDED INTO POTENTIALLY HUNDREDS OF OTHER PAGES.  ANY CHANGE MADE HERE WILL AFFECT ALL THESE PAGES SIMULTANEOUSLY, INCLUDING PAGES DEALING WITH MANY TYPES OF DEVICES.  SO DO NOT EDIT THIS PAGE UNLESS YOU KNOW '''EXACTLY''' WHAT YOU ARE DOING. THANKS!}}
+</noinclude>={{{device_vendor_longname}}} {{{device_name}}}=
+{| class="deviceInfoBox" style="float:right; width:300px; background-color:#ddd; font-size:80%; margin:0 0 20px 20px; border-spacing:3px;"
+|+ style="color:#fff; background:#27aae1; padding:2px" | '''{{{device_name}}} Specifications'''
+|-
+{{#if:{{{device_image|}}}|{{!}} colspan="2" style="vertical-align:top; text-align:center;" {{!}}[[Image:{{{device_image}}}|150px]]}}
+|-
+{{#if:{{{device_codename|}}}|! Codename:
+{{!}}{{{device_codename}}}}}
+|-
+{{#if:{{{device_aka|}}}|! Also known as:
+{{!}}{{{device_aka}}}}}
+|-
+{{#if:{{{device_vendor_longname|}}}|! Vendor:
+{{!}}{{{device_vendor_longname}}}}}
+|-
+{{#if:{{{device_manufacturer|}}}|! Manufacturer:
+{{!}}{{{device_manufacturer}}}}}
+|-
+{{#if:{{{device_release_date|}}}|! Release Date:
+{{!}}{{{device_release_date}}}}}
+|-
+{{#if:{{{device_carrier|}}}|! Carrier:
+{{!}}{{{device_carrier}}}}}
+|-
+{{#if:{{{device_type|}}}|! Type:
+{{!}}{{{device_type}}}}}
+|-
+{{#if:{{{device_gsm_frequency|}}}|! GSM freq:
+{{!}}{{{device_gsm_frequency}}}}}
+|-
+{{#if:{{{device_wimax_frequency|}}}|! WiMAX freq:
+{{!}}{{{device_wimax_frequency}}}}}
+|-
+{{#if:{{{device_cdma_frequency|}}}|! CDMA freq:
+{{!}}{{{device_cdma_frequency}}}}}
+|-
+{{#if:{{{device_lte_frequency|}}}|! LTE freq:
+{{!}}{{{device_lte_frequency}}}}}
+|-
+{{#if:{{{device_soc|}}}|! Platform:
+{{!}}{{{device_soc}}}}}
+|-
+{{#if:{{{device_cpu_frequency|}}} {{{device_cpu_cores|}}} {{{device_cpu|}}}|! CPU:
+{{!}}{{#if:{{{device_cpu_frequency|}}}|{{{device_cpu_frequency}}}}} {{#if:{{{device_cpu_cores|}}}|{{{device_cpu_cores}}}-core}} {{#if:{{{device_cpu|}}}|{{{device_cpu}}}}}}}
+|-
+{{#if:{{{device_gpu|}}}|! GPU:
+{{!}}{{{device_gpu}}}}}
+|-
+{{#if:{{{device_ram|}}}|! RAM:
+{{!}}{{{device_ram}}}}}
+|-
+{{#if:{{{device_weight|}}}|! Weight:
+{{!}}{{{device_weight}}}}}
+|-
+{{#if:{{{device_dimensions|}}}|! Dimensions:
+{{!}}{{{device_dimensions}}}}}
+|-
+{{#if:{{{device_screen_dimension|}}}|! Screen dimension:
+{{!}}{{{device_screen_dimension}}}}}
+|-
+{{#if:{{{device_screen_resolution|}}}|! Resolution:
+{{!}}{{{device_screen_resolution}}}}}
+|-
+{{#if:{{{device_screen_density|}}}|! Screen Density:
+{{!}}{{{device_screen_density}}}}}
+|-
+{{#if:{{{device_screen_technology|}}}|! Screen Technology:
+{{!}}{{{device_screen_technology}}}}}
+|-
+{{#if:{{{device_internal_storage|}}}|! Internal Storage:
+{{!}}{{{device_internal_storage}}}}}
+|-
+{{#if:{{{device_sdcard|}}}|! SD Card:
+{{!}}{{{device_sdcard}}}}}
+|-
+{{#if:{{{device_bluetooth|}}}|! Bluetooth:
+{{!}}{{{device_bluetooth}}}}}
+|-
+{{#if:{{{device_wifi|}}}|! Wi-Fi:
+{{!}}{{{device_wifi}}}}}
+|-
+{{#if:{{{device_camera|}}}|! Main camera:
+{{!}}{{{device_camera}}}{{#if:{{{device_camera_flash|}}}|, flash: {{{device_camera_flash}}}}}}}
+|-
+{{#if:{{{device_secondary_camera|}}}|! Secondary camera:
+{{!}}{{{device_secondary_camera}}}}}
+|-
+{{#if:{{{device_power|}}}|! Power:
+{{!}}{{{device_power}}}}}
+|-
+{{#if:{{{device_sound|}}}|! Sound:
+{{!}}{{{device_sound}}}}}
+|-
+{{#if:{{{device_peripherals|}}}|! Peripherals:
+{{!}}{{{device_peripherals}}}}}
+|-
+{{#if:{{{device_SFOS_versions_supported|}}}|! SailfishOS Ports Support:
+{{!}}{{{device_SFOS_versions_supported}}}}}
+|-
+{{#if:{{{device_last_SFOS_branch_supported|}}}|! Latest SailfishOS Ports version:
+{{!}}{{{device_last_SFOS_branch_supported}}}}}
+|-
+|}<div style="margin-right:305px;">{{#if:{{{device_last_SFOS_branch_supported|}}}|{{note|heading=Support Status|note=This device does not support the newest version of SailfishOS Ports. This may be due to hardware limitations or simply because development is not yet complete. The last version officially supported was based on the ''[[Wikipedia:Android_version_history|{{{device_last_SFOS_branch_supported}}}]]'' branch of SailfishOS Ports.}}}}
+{{#if:{{{device_notes|}}}|===Notes===
+{{{device_notes}}}}}
+=== Get SailfishOS Ports for the {{{device_name}}} ===
+
+Choose a download. If you don't see any files in a category, it may simply mean that downloads were not generated and are unavailable.
+
+<p class="device-get-sfos" style="text-align:center;">
+<span class="nightly">[http://build.webos-ports.org/luneos-testing/images/{{#lowercase:{{{device_codename}}}}} <b>Nightly</b> usually generated every 24 hours, experimental, newest features, <em>unstable!</em>]</span>
+<span class="stable">[http://build.webos-ports.org/luneos-stable/images/{{#lowercase:{{{device_codename}}}}} <b>Release</b> <em>most stable</em> version available, all or nearly all issues resolved]</span>
+</p>
+
+When your download has finished, see [[Install_SFOS_for_{{{device_codename}}}|How to install SailfishOS Ports on the {{{device_name}}}]].
+
+<h4 class="device-build-sfos">Or build SailfishOS Ports yourself</h4>
+
+See [[Build_SFOS_for_{{{device_codename}}}|How to Build SailfishOS Ports for the {{{device_name}}}]] .
+
+'''Source Repositories:'''
+{| class="singleborder"
+|'''Device'''||TBD
+{{#ifeq:{{{device_last_SFOS_branch_supported}}}|gingerbread||{{!}}-
+{{!}} '''Kernel''' 
+{{!}} TBD}}
+|}
+{{#if:{{{device_recovery_boot_steps|}}}|=== How to boot into recovery mode ===
+{{{device_recovery_boot_steps}}}}}
+{{#if:{{{device_bootloader_boot_steps|}}}|=== How to boot into the bootloader ===
+{{{device_bootloader_boot_steps}}}}}
+{{#if:{{{device_fastboot_boot_steps|}}}|=== How to boot into fastboot ===
+{{{device_fastboot_boot_steps}}}}}
+=== Find help online ===
+You may find assistance with the {{{device_name}}} on our IRC Channel on the Freenode Network. [http://webchat.freenode.net/?channels=sailfishos-porters #sailfishos-porters].<!-- or on the [[community|WebOS Ports forums]].-->{{#if:{{{device_WOP_forum|}}}|
+* [http://forum.cyanogenmod.org/forum/{{{device_SFOS_forum}}} SailfishOS Ports Forum]}}{{#if:{{{device_irc_channel|}}}|
+* [http://webchat.freenode.net?channels={{{device_irc_channel}}} {{{device_irc_channel}}} on freenode]}}
+{{#if:{{{device_maintainers|}}}|===Maintainers===
+The following people are maintainers for this device:
+{{{device_maintainers}}}}}
+{{#if:{{{device_contributors|}}}|===Contributors===
+The following people and/or organizations have contributed to this device:
+{{{device_contributors}}}}}
+{{#if:{{{device_additional_info|}}}|===Additional Info / Downloads===
+Files are provided for archival purposes and are '''not''' supported by SFOS.
+{{{device_additional_info}}}
+}}
+
+<div class="editDeviceTemplateBox" style="position:relative; padding:5px 5px 5px 73px; margin:0.4em 0 0.5em; background:#ddd; min-height:57px;">
+<div class="plainlinks">[{{fullurl:Template:device_{{{device_codename}}}|action=edit}} <span class="bar"></span>]</div>
+<h3 style="font-size:110%;">'''Edit the {{{device_codename}}} device template'''</h3>
+
+This wiki has a "master" device template for adjusting settings pertaining specifically to the {{{device_name}}} ([[Documentation#We use templates, templates, templates!|learn more]]).<br />
+To change these master settings, edit the wiki device template at [{{fullurl:Template:device_{{{device_codename}}}|action=edit}} Template:device_{{{device_codename}}}].
+</div>
+
+{{reportissuestip}}
+</div>
+
+__NOEDITSECTION__ __NOTOC__
