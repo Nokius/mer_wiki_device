@@ -98,13 +98,9 @@
 {{#if:{{{device_peripherals|}}}|! Peripherals:
 {{!}}{{{device_peripherals}}}}}
 |-
-{{#if:{{{device_SFOS_versions_supported|}}}|! SailfishOS Ports Support:
-{{!}}{{{device_SFOS_versions_supported}}}}}
-|-
-{{#if:{{{device_last_SFOS_branch_supported|}}}|! Latest SailfishOS Ports version:
-{{!}}{{{device_last_SFOS_branch_supported}}}}}
-|-
-|}<div style="margin-right:305px;">{{#if:{{{device_last_SFOS_branch_supported|}}}|{{note|heading=Support Status|note=This device does not support the newest version of SailfishOS Ports. This may be due to hardware limitations or simply because development is not yet complete. The last version officially supported was based on the ''[[Wikipedia:Android_version_history|{{{device_last_SFOS_branch_supported}}}]]'' branch of SailfishOS Ports.}}}}
+{{#if:{{{device_SailfishOS_versions_supported|}}}|! SailfishOS Ports Support:
+{{!}}{{{device_SailfishOS_versions_supported}}}}}
+|}
 {{#if:{{{device_notes|}}}|===Notes===
 {{{device_notes}}}}}
 === Get SailfishOS Ports for the {{{device_name}}} ===
@@ -146,7 +142,7 @@ The following people are maintainers for this device:
 The following people and/or organizations have contributed to this device:
 {{{device_contributors}}}}}
 {{#if:{{{device_additional_info|}}}|===Additional Info / Downloads===
-Files are provided for archival purposes and are '''not''' supported by SFOS.
+Files are provided for archival purposes and are '''not''' supported by SailfishOS.
 {{{device_additional_info}}}
 }}
 
