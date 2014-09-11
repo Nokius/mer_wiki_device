@@ -24,7 +24,6 @@ Also we recommend that you delete this notice and the tip below when you make yo
 |device_recovery_install_method=<!-- optional. Choose the method used to flash the recovery. Options are: fastboot, flash_image, dd, or leave blank if the flashing is covered in the CM flashing instructions (such as with most Samsung / HTC devices) --> 
 |device_manufacturer=<!-- optional. Note: This is NOT the code used in CM directories (that would be device_vendor) but is provided just for additional info -->
 |device_CM_versions_supported=<!-- optional, but you should put something here. Use major CM releases such as: 7, 9, 10, 10.1, etc. -->
-|device_last_CM_branch_supported=<!-- optional. For older devices. Change to the branch name, in lowercase, as used in the repo init. Examples: ics, gingerbread, froyo, etc. IF THIS IS NOT SET, THE LATEST VERSION OF CM IS ASSUMED TO WORK. -->
 |device_aka=<!-- optional. Include any other device names. Wiki redirects can point to the same page. -->
 |device_notes=<!-- optional. You can put as many lines of description as you like here. -->
 |device_release_date=<!-- optional. {{#dateformat:2012 July 8}} -->
@@ -64,7 +63,7 @@ Also we recommend that you delete this notice and the tip below when you make yo
 |device_local_manifest=<!-- set this to a link to add local_manifest.xml to build guide -->
 |device_kernel_override=<!-- replace auto-generated kernel link when device name does not match kernel name. Example: aries, smdk4210 -->
 |device_sound=<!-- optional. -->
-|device_cm_forum=<!-- optional. Example: 529-google-galaxy-nexus-gsm/ -->
+|device_SFOS_forum=<!-- optional. Example: 529-google-galaxy-nexus-gsm/ -->
 |device_irc_channel=<!-- optional. Assumes freenode IRC server. Example: #nexus7 -->
 |device_power=<!-- optional. you can put battery info, voltage, mAh, and/or how many hours of use, removable or not etc. Example: 1500 mAh-->
 |device_maintainers=<!-- optional. You can put as long a list of maintainers as you like including links. -->
