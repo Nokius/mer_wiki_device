@@ -4,7 +4,7 @@
 |warning=THIS PAGE IS NOT A REGULAR WIKI PAGE.  IT IS A WIKI *TEMPLATE* AUTO-INCLUDED INTO POTENTIALLY HUNDREDS OF OTHER PAGES.  ANY CHANGE MADE HERE WILL AFFECT ALL THESE PAGES SIMULTANEOUSLY, INCLUDING PAGES DEALING WITH MANY TYPES OF DEVICES.  SO DO NOT EDIT THIS PAGE UNLESS YOU KNOW '''EXACTLY''' WHAT YOU ARE DOING. THANKS!}}
 </noinclude>={{{device_vendor_longname}}} {{{device_name}}}=
 {| class="deviceInfoBox" style="float:right; width:300px; background-color:#ddd; font-size:80%; margin:0 0 20px 20px; border-spacing:3px;"
-|+ style="color:#fff; background:#27aae1; padding:2px" | '''{{{device_name}}} Specifications'''
+|+ style="color:#fff; background:#6279D2; padding:2px" | '''{{{device_name}}} Specifications'''
 |-
 {{#if:{{{device_image|}}}|{{!}} colspan="2" style="vertical-align:top; text-align:center;" {{!}}[[Image:{{{device_image}}}|150px]]}}
 |-
@@ -116,11 +116,11 @@ Choose a download. If you don't see any files in a category, it may simply mean 
 <span class="stable">[http://build.webos-ports.org/luneos-stable/images/{{#lowercase:{{{device_codename}}}}} <b>Release</b> <em>most stable</em> version available, all or nearly all issues resolved]</span>
 </p>
 
-When your download has finished, see [[Install_SFOS_for_{{{device_codename}}}|How to install SailfishOS Ports on the {{{device_name}}}]].
+When your download has finished, see [[Install_SailfishOS_for_{{{device_codename}}}|How to install SailfishOS Ports on the {{{device_name}}}]].
 
 <h4 class="device-build-sfos">Or build SailfishOS Ports yourself</h4>
 
-See [[Build_SFOS_for_{{{device_codename}}}|How to Build SailfishOS Ports for the {{{device_name}}}]] .
+See [[Build_SailfishOS_for_{{{device_codename}}}|How to Build SailfishOS Ports for the {{{device_name}}}]] .
 
 '''Source Repositories:'''
 {| class="singleborder"

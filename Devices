@@ -1,4 +1,4 @@
-__NOEDITSECTION__
+===THIS IS A WORK IN PROGRESS.  PLEASE LEAVE IT ALONE FOR NOW.===
 
 Officially-supported SailfishOS devices<!--T:1-->
 
@@ -21,6 +21,7 @@ Don't see your device in the list above?
 
 <!--T:6-->
 SailfishOS for Android Devices is made by voluntary. Not all of these devices are currently being worked on by SailfishOS Porters and therefore cannot be officially supported by SailfishOS Porters at this time. 
+
 	
 
 == Add a new official device to the wiki == <!--T:7-->
@@ -29,7 +30,7 @@ SailfishOS for Android Devices is made by voluntary. Not all of these devices ar
 Select '''[Expand]''' to the right for instructions.
 <div class="mw-collapsible-content">
 
-<div style="background:#27AAE1; color:#fff; padding: 4px; text-align:center;"><!--T:9-->
+<div style="background:#6279D2; color:#fff; padding: 4px; text-align:center;"><!--T:9-->
 '''Add a device to the wiki'''</div>
 
 <!--T:10-->
@@ -43,7 +44,7 @@ Select '''[Expand]''' to the right for instructions.
 ::<code>Template:Device_CODENAME</code>
 
 <!--T:13-->
-:(Example:  [[Template:Device_Grouper|Template:Device_Grouper]] for the Nexus 7 tablet.)
+:(Example:  [[Template:Device_Find5|Template:Device_Find5]] for the Find5 Phone.)
 
 <!--T:14-->
 :Then edit the form, filling in as many fields as you are able, and save the new template you have created. (EDIT THE '''NEW''' TEMPLATE FOR YOUR DEVICE. DO NOT EDIT THE GENERIC BLANK ITSELF!)
@@ -66,7 +67,7 @@ Select '''[Expand]''' to the right for instructions.
 <!--T:18-->
 :In this page, simply insert the following single line of content:
 
-::<code><nowiki>{{Device_CODENAME|function=Device_info}}</nowiki></code>
+::<code><nowiki>{{Device_CODENAME|function=Device_Info}}</nowiki></code>
 
 <!--T:19-->
 '''4. Create the device ''How To Install'' page'''
@@ -77,7 +78,7 @@ Select '''[Expand]''' to the right for instructions.
 <!--T:20-->
 :In this page, simply insert the following single line of content:
 
-::<code><nowiki>{{Device_CODENAME|function=Device_install}}</nowiki></code>
+::<code><nowiki>{{Device_CODENAME|function=Device_Install}}</nowiki></code>
 
 <!--T:21-->
 :Save the page.  You now should see an auto-generated installation walkthrough page for the device.
@@ -86,14 +87,15 @@ Select '''[Expand]''' to the right for instructions.
 '''5. Create the device ''Build Walkthrough'' page'''
 :Next, to auto-generate a SailfishOS Ports build guide for this device, scroll to the bottom where it links (in red) to the Build Walkthrough for the device.  It should take you to an empty "build for" page:
 
-::<code>Build_for_CODENAME</code>
+::<code>Build_SailfishOS_for_CODENAME</code>
 
 <!--T:23-->
 :In this page, simple insert the following single line of content:
 
-::<code><nowiki>{{Device_CODENAME|function=Device_build}}</nowiki></code>
+::<code><nowiki>{{Device_CODENAME|function=Device_Build}}</nowiki></code>
 
 <!--T:24-->
 '''That's it!'''
 
 </div></div>
+
