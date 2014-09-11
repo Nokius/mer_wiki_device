@@ -136,8 +136,8 @@ See [[Build_SailfishOS_for_{{{device_codename}}}|How to Build SailfishOS Ports f
 {{#if:{{{device_fastboot_boot_steps|}}}|=== How to boot into fastboot ===
 {{{device_fastboot_boot_steps}}}}}
 === Find help online ===
-You may find assistance with the {{{device_name}}} on our IRC Channel on the Freenode Network. [http://webchat.freenode.net/?channels=sailfishos-porters #sailfishos-porters].<!-- or on the [[community|WebOS Ports forums]].-->{{#if:{{{device_WOP_forum|}}}|
-* [http://forum.cyanogenmod.org/forum/{{{device_SFOS_forum}}} SailfishOS Ports Forum]}}{{#if:{{{device_irc_channel|}}}|
+You may find assistance with the {{{device_name}}} on our IRC Channel on the Freenode Network. [http://webchat.freenode.net/?channels=sailfishos-porters #sailfishos-porters].<!-- or on the [[community|SailfishOS Ports forums]].-->{{#if:{{{device_SFOS_forum|}}}|
+* [http://forum.xda-developers.com/jolla-sailfish/{{{device_SFOS_forum}}} SailfishOS Ports Forum]}}{{#if:{{{device_irc_channel|}}}|
 * [http://webchat.freenode.net?channels={{{device_irc_channel}}} {{{device_irc_channel}}} on freenode]}}
 {{#if:{{{device_maintainers|}}}|===Maintainers===
 The following people are maintainers for this device:
